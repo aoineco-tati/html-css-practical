@@ -1,0 +1,152 @@
+/*共通スタイル*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Noto Sans Japanese";
+}
+
+header{
+    background-color: #fff;
+}
+
+.header-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header-inner h1{
+    border: 1px solid #000;
+    padding: 5px 16px;
+    font-size: 34px;
+}
+
+.header-inner nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.header-inner nav a{
+   text-decoration: none;
+   color: #000;
+   font-size: 34px;
+   font-weight: bold;
+}
+
+.main-img{
+    width: 100%;
+    height: auto;
+}
+
+#about{
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+#about h1{
+    font-size: 34px;
+    text-align: center;
+}
+
+.about-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+.about-content img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.description{
+    width: 350px;
+}
+
+/*works*/
+#works{
+    max-width: 820px;
+    margin: 80px auto;
+}
+
+#works h1{
+    font-size: 34px;
+    text-align: center;
+}
+
+.works-content{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.works-content img{
+    width: 260px;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+}
+
+/*レスポンシブ*/
+@media screen and (max-width:767px) {
+    
+.header-inner{
+    width: 100%;
+    display: flex;
+    padding: 0 20px;
+}
+
+.header-inner h1{
+    font-size: 24px;
+}
+
+.header-inner nav a{
+    font-size: 20px;
+    padding-left: 0;
+    gap: 20px;
+}
+
+#about{
+    width: 100%;
+}
+
+#about h1{
+    text-align: center;
+}
+
+.about-content{
+    flex-direction: column;
+    gap: 20px;
+}
+
+#works{
+    width: 100%;
+}
+
+#works h1{
+    text-align: center;
+}
+
+.works-content{
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.works-content img{
+    width: 100%;
+}
+
+footer{
+    text-align: center;
+}
+}
